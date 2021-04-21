@@ -9,6 +9,8 @@ export default function IndexPage() {
       </Link>
       <h1>Mon texte</h1>
       <p>Paragraphe</p>
+      <p>Paragraphe numéro 2</p>
+
     </div>
   )
 }
