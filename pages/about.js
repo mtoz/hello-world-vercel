@@ -9,7 +9,7 @@ export default function About() {
         <a>Accueil</a>
       </Link>
       <h1 className={style.center}>Page contact</h1>
-      <p>Paragraphe contact</p>
+      <p className={style.p}>Paragraphe contact</p>
       <p>Paragraphe numéro 2 page contact</p>
       <p>Test extensions</p>
 
