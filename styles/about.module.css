@@ -1,10 +1,190 @@
-.center{
-    text-align: center;
-    color: yellowgreen;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+/* START */
+div.body
+{
+    height: 100vh;
+    /* background: black; */
+}
+div.btnContainer
+{
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    /* background: #757555; */
+    background: #29403e;
+
+    margin: 0;
+    padding: 0;
 }
 
-.p{
+div.btnContainer .btn
+{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+}
+
+div.btnContainer .btn a
+{
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+    
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(255, 255, 255, 0.05); */
+    background: #736560;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* border-radius: 30px; */
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+div.btnContainer .btn:hover a
+{
+    letter-spacing: 3px;
+}
+
+/* bcg du btn */
+div.btnContainer .btn a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+div.btnContainer .btn:hover a::before
+{
+    transform: skewX(45deg) translateX(200%);
+}
+
+div.btnContainer :nth-child(2) a
+{
+   background: #c7bfb8;
+   border: 1px solid #736560;
+   color: #3a3330;
+   font-family: 'Oxygen', sans-serif;
+}
+
+
+
+/** ***************************************** */
+div.greyBanner
+{
+    /* background: #29403e; */
+    background: #c7bfb8;
+    height: 30%;
+}
+
+/** ***************************************** */
+
+/** ***************************************** */
+
+.containCard
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+    /* border: solid 1px black; */
+}
+
+.containCard .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+
+    background: #29403e;
+    background: #fb9205;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+
+    /* border: solid 1px red; */
+}
+.containCard .card:hover
+{
+    height: 420px;
+}
+
+.containCard .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border: solid 1px black;
+
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.containCard .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
     text-align: center;
-    color: violet;
-    font-size: 18px;
+    color: #fb9205;
+    color: #29403e;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+    /* border: solid 1px white; */
+}
+.containCard .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+/**/
+
+.containCard :nth-child(2).card
+{
+    background: #29403e;
+}
+.containCard :nth-child(2) .content
+{
+    color: #fb9205;
+}
+
+.containCard :nth-child(3).card
+{
+    background: #c7bfb8;
 }
