@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 /* START */
-div.body
+
+
+.container
 {
-    height: 100vh;
-    /* background: black; */
+    min-height: 100vh;
+    background: #c7bfb8;
 }
 div.btnContainer
 {
@@ -13,7 +15,7 @@ div.btnContainer
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30%;
+    height: 100%;
     /* background: #757555; */
     background: #29403e;
 
@@ -89,27 +91,32 @@ div.btnContainer :nth-child(2) a
    font-family: 'Oxygen', sans-serif;
 }
 
-
-
-/** ***************************************** */
-div.greyBanner
+div.btnContainer .btn:nth-child(3) a
 {
-    /* background: #29403e; */
-    background: #c7bfb8;
-    height: 30%;
+   background: #fbdc96;
+   border: 1px solid #736560;
+   color: #4b362c;
+   font-family: 'Oxygen', sans-serif;
 }
 
-/** ***************************************** */
+div.btnContainer .btn:nth-child(4) a
+{
+    background: #4b362c; 
+    border: 1px solid #736560;
+    color: #fbdc96;
+    font-family: 'Oxygen', sans-serif;
+}
 
 /** ***************************************** */
 
 .containCard
 {
     position: relative;
-    width: 1100px;
+    /* width: 1100px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 30px;
 
@@ -121,8 +128,6 @@ div.greyBanner
     position: relative;
     max-width: 300px;
     height: 215px;
-
-    background: #29403e;
     background: #fb9205;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -157,7 +162,6 @@ div.greyBanner
     margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
-    color: #fb9205;
     color: #29403e;
     visibility: hidden;
     opacity: 0;
@@ -173,18 +177,41 @@ div.greyBanner
     transition-delay: 0.3s;
 }
 
-/**/
+/*******************************************************/
 
-.containCard :nth-child(2).card
+.containCard .card:nth-child(2) 
 {
     background: #29403e;
 }
-.containCard :nth-child(2) .content
+.containCard .card:nth-child(2) .content
 {
     color: #fb9205;
 }
 
-.containCard :nth-child(3).card
+.containCard .card:nth-child(3)
 {
     background: #c7bfb8;
 }
+
+.containCard .card:nth-child(4)
+{
+    background: #4b362c;
+}
+.containCard .card:nth-child(4) .content
+{
+    color: #fbdc96;
+}
+
+.containCard .card:nth-child(5)
+{
+    background:#fbdc96 ;
+}
+.containCard .card:nth-child(5) .content
+{
+    color:#4b362c ;
+}
+
+/*******************************************************/
+
+
+
