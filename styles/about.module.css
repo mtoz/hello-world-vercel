@@ -1,4 +1,18 @@
+/* oxygen */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+/* cairo */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+/* owsald */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* archivo */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Cairo&family=Oswald&display=swap');
+
+/* oxygen et archivo grand gagnat */
 
 /* START */
 
@@ -7,6 +21,7 @@
 {
     min-height: 100vh;
     background: #c7bfb8;
+    /* background: #736560; */
 }
 div.btnContainer
 {
@@ -15,9 +30,10 @@ div.btnContainer
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 1000px;
     /* background: #757555; */
     background: #29403e;
+    /* background: #fbdc96; */
 
     margin: 0;
     padding: 0;
@@ -96,7 +112,7 @@ div.btnContainer .btn:nth-child(3) a
    background: #fbdc96;
    border: 1px solid #736560;
    color: #4b362c;
-   font-family: 'Oxygen', sans-serif;
+   font-family: 'Owsald', sans-serif;
 }
 
 div.btnContainer .btn:nth-child(4) a
@@ -104,6 +120,15 @@ div.btnContainer .btn:nth-child(4) a
     background: #4b362c; 
     border: 1px solid #736560;
     color: #fbdc96;
+    font-family: 'Oxygen', sans-serif;
+}
+
+div.btnContainer .btn:nth-child(5) a
+{
+    background: #fb9205; 
+    border: 1px solid #736560;
+    color: #fbdc96;
+    color: #4b362c;;
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -166,6 +191,7 @@ div.btnContainer .btn:nth-child(4) a
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
+    font-family: 'Oxygen', 'Owsald', sans-serif;
 
     /* border: solid 1px white; */
 }
@@ -179,6 +205,10 @@ div.btnContainer .btn:nth-child(4) a
 
 /*******************************************************/
 
+.containCard .card:nth-child(1)
+{
+    background: url(/public/afficheparkour.jpg);
+}
 .containCard .card:nth-child(2) 
 {
     background: #29403e;
@@ -186,11 +216,17 @@ div.btnContainer .btn:nth-child(4) a
 .containCard .card:nth-child(2) .content
 {
     color: #fb9205;
+    font-family: 'Cairo', sans-serif;
 }
 
 .containCard .card:nth-child(3)
 {
     background: #c7bfb8;
+}
+
+.containCard .card:nth-child(3) .content
+{
+    font-family: 'Owsald', 'Oxygen', sans-serif;
 }
 
 .containCard .card:nth-child(4)
@@ -200,6 +236,7 @@ div.btnContainer .btn:nth-child(4) a
 .containCard .card:nth-child(4) .content
 {
     color: #fbdc96;
+    font-family: 'Archivo', sans-serif,
 }
 
 .containCard .card:nth-child(5)
@@ -209,9 +246,17 @@ div.btnContainer .btn:nth-child(4) a
 .containCard .card:nth-child(5) .content
 {
     color:#4b362c ;
+    font-family: 'Roboto', sans-serif;
+}
+.containCard .card:nth-child(7)
+{
+    background: #203130;
+}
+.containCard .card:nth-child(7) .imgBx
+{
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 /*******************************************************/
-
 
 
